@@ -7,6 +7,16 @@
   <version>1.0-SNAPSHOT</version>
   <name>myapp</name>
   <url>http://maven.apache.org</url>
+  <distributionManagement>
+    <repository>
+        <id>nexus</id>
+        <url>http://35.175.232.141:8081/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+        <id>nexus</id>
+        <url>http://35.175.232.141:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
   <properties>
     <sonar.projectKey>myapp</sonar.projectKey>
     <sonar.projectName>myapp</sonar.projectName>
